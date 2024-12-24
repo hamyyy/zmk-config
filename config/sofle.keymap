@@ -77,8 +77,8 @@
 //               |     |      |      |      |        |  |       |      |   0   |       |      |
             bindings = <
 &kp GRAVE  &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                 &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp DEL
-&trans     &kp F11   &kp F12   &none       &kp INS   &kp HOME               &kp MINUS &kp EQUAL &kp UP    &kp LBKT  &kp RBKT  &none
-&kp CAPS   &none     &none     &none       &kp DEL   &kp END                &none     &kp LEFT  &kp DOWN  &kp RIGHT &kp SQT   &none
+&trans     &kp F11   &kp F12   &none       &kp INS   &kp HOME               &kp MINUS &kp EQUAL &kp UP    &kp LBKT  &kp RBKT  &trans
+&kp CAPS   &none     &none     &none       &kp DEL   &kp END                &none     &kp LEFT  &kp DOWN  &kp RIGHT &kp SQT   &trans
 &trans     &none     &none     &none       &trans    &trans  &trans &trans  &none     &none     &none     &none     &none     &trans
                      &trans    &trans      &trans    &trans  &trans &trans  &trans    &trans    &trans    &trans
             >;
@@ -90,7 +90,7 @@
 // ----------------------------------------------------------------------------------------------------------------------------
 // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
 // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
-// |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
+// | EXTPWR | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
 // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "adjust";
