@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 140
 #define ZMK_MOUSE_SCRL_VAL 140
 
 #define BASE   0
@@ -31,12 +32,10 @@
     };
 
    behaviors {
-        scroll_behavior: scroll_behavior {
+        scroll_up_down: scroll_up_down {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_BEHAVIOR";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
             tap-ms = <20>;
         };
     };
@@ -65,7 +64,7 @@
             //                          ╰────────────┴────────────┴────────────┴────────────┴────────────╯   ╰────────────┴────────────┴────────────┴────────────┴────────────╯
             >;
 
-            sensor-bindings = <&scroll_behavior &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&scroll_up_down>, <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
