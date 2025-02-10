@@ -65,7 +65,7 @@
             //                          ╰────────────┴────────────┴────────────┴────────────┴────────────╯   ╰────────────┴────────────┴────────────┴────────────┴────────────╯
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_behavior>;
+            sensor-bindings = <&scroll_behavior &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
