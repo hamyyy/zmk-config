@@ -64,7 +64,7 @@
                 &kp LCTRL    &kp Z        &kp X        &kp C        &kp V        &kp B        &kp C_MUTE       &kp C_PP     &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH     &kp BSLH
             //╰────────────┴────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┴────────────╯
             //                          │            │            │            │            │            │   │            │            │            │            │            │
-                                          &kp LCTRL    &kp LGUI     &kp LALT     &mo LOWER    &kp SPACE        &kp SPACE    &mo RAISE    &kp RGUI     &kp RALT     &kp RCTRL   
+                                          &kp LGUI     &kp LALT     &none        &mo LOWER    &kp SPACE        &kp SPACE    &mo RAISE    &kp RGUI     &kp RALT     &kp RCTRL   
             //                          ╰────────────┴────────────┴────────────┴────────────┴────────────╯   ╰────────────┴────────────┴────────────┴────────────┴────────────╯
             >;
 
@@ -81,8 +81,8 @@
             //│  `         │  F11       │  F12       │  ^         │  INSERT    │  HOME      │                             │            │  7         │  8         │  9         │            │            │
                 &kp GRAVE    &kp F11      &kp F12      &kp UP       &kp INS      &kp HOME                                   &none        &kp KP_N7    &kp KP_N8    &kp KP_N9    &none        &trans      
             //├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤                             ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-            //│ CAPSLOCK   │            │  <-        │  v         │  ->        │  END       │                             │            │  4         │  5         │  6         │            │            │
-                &kp CAPS     &none        &kp LEFT     &kp DOWN     &kp RIGHT    &kp END                                    &none        &kp KP_N4    &kp KP_N5    &kp KP_N6    &none        &trans      
+            //│            │            │  <-        │  v         │  ->        │  END       │                             │            │  4         │  5         │  6         │            │            │
+                &trans       &none        &kp LEFT     &kp DOWN     &kp RIGHT    &kp END                                    &none        &kp KP_N4    &kp KP_N5    &kp KP_N6    &none        &trans      
             //├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼─L ENCODER──╮   ╭─R ENCODER──┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
             //│            │            │            │            │            │ PWR TOGGLE │            │   │            │            │  1         │  2         │  3         │            │            │
                 &trans       &none        &none        &none        &none      &rgb_ug RGB_TOG    &trans       &trans       &none        &kp KP_N1    &kp KP_N2    &kp KP_N3    &none        &trans      
@@ -97,14 +97,14 @@
             display-name = "raise";
             bindings = <
             //╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮                             ╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮
-            //│  `         │  F1        │  F2        │  F3        │  F4        │  F5        │                             │  F6        │  F7        │  F8        │  F9        │  F10       │  DELETE    │
-                &kp GRAVE    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                                     &kp F6       &kp F7       &kp F8       &kp F9       &kp F10      &kp DEL
+            //│            │  F1        │  F2        │  F3        │  F4        │  F5        │                             │  F6        │  F7        │  F8        │  F9        │  F10       │  DELETE    │
+                &trans       &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                                     &kp F6       &kp F7       &kp F8       &kp F9       &kp F10      &kp DEL
             //├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤                             ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-            //│            │  F11       │  F12       │            │  INSERT    │  HOME      │                             │  -         │  =         │  ^         │  [         │  ]         │            │
-                &trans       &kp F11      &kp F12      &none        &kp INS      &kp HOME                                   &kp MINUS    &kp EQUAL    &kp UP       &kp LBKT     &kp RBKT     &trans
+            //│ CAPSLOCK   │  F11       │  F12       │            │  INSERT    │  HOME      │                             │  -         │  =         │  ^         │  [         │  ]         │            │
+                &kp CAPS     &kp F11      &kp F12      &none        &kp INS      &kp HOME                                   &kp MINUS    &kp EQUAL    &kp UP       &kp LBKT     &kp RBKT     &trans
             //├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤                             ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-            //│ CAPSLOCK   │            │            │            │  DELETE    │  END       │                             │            │  <-        │  v         │  ->        │            │            │
-                &kp CAPS     &none        &none        &none        &kp DEL      &kp END                                    &none        &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &trans    
+            //│            │            │            │            │  DELETE    │  END       │                             │            │  <-        │  v         │  ->        │            │            │
+                &trans       &none        &none        &none        &kp DEL      &kp END                                    &none        &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &trans    
             //├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼─L ENCODER──╮   ╭─R ENCODER──┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
             //│            │            │            │            │            │            │            │   │            │ PWR TOGGLE │            │            │            │            │            │
                 &trans       &none        &none        &none        &trans       &trans       &trans           &trans   &rgb_ug RGB_TOG  &none        &none        &none        &none        &trans
