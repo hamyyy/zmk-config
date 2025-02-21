@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 500
-#define ZMK_MOUSE_SCRL_VAL 500
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 1000
+#define ZMK_MOUSE_SCRL_VAL 1000
 
 #define BASE   0
 #define LOWER  1
@@ -21,7 +21,7 @@
 
 
 &sensors {
-    triggers-per-rotation = <15>;
+    triggers-per-rotation = <7>;
 };
 
 / {
@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <150>;
+            tap-ms = <200>;
         };
     };
 
