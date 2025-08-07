@@ -21,7 +21,7 @@
 
 
 &sensors {
-    triggers-per-rotation = <28>;
+    triggers-per-rotation = <30>;
 };
 
 / {
@@ -91,6 +91,8 @@
                                           &trans       &trans       &trans       &trans       &trans           &trans       &trans       &kp KP_N0    &none        &none       
             //                          ╰────────────┴────────────┴────────────┴────────────┴────────────╯   ╰────────────┴────────────┴────────────┴────────────┴────────────╯
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp C_NEXT C_PREV>;
         };
 
         raise_layer {
